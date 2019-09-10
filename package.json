@@ -1,0 +1,25 @@
+{
+  "name": "app-puzi-node",
+  "version": "1.0.0",
+  "description": "app puzi 后端",
+  "main": " app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "sudo node bin/www"
+  },
+  "author": "litle",
+  "license": "ISC",
+  "devDependencies": {
+    "bcrypt": "^3.0.6",
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "formidable": "^1.2.1",
+    "jsonwebtoken": "^8.5.1",
+    "multer": "^1.4.2",
+    "mysql": "^2.17.1",
+    "uuid": "^3.3.2"
+  },
+  "dependencies": {
+    "nodemon": "^1.19.1"
+  }
+}

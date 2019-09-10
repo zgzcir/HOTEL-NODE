@@ -1,0 +1,27 @@
+@url = http://172.18.19.4
+@json = Content-Type: application/json
+
+
+###
+post {{url}}/register
+{{json}}
+
+{
+  "adminName": "test_1",
+  "adminPassword": "123456",
+  "lastLoginTime": "null"
+}
+
+###
+post {{url}}/bg/login
+{{json}}
+
+{
+  "adminName": "test",
+  "adminPassword": "123456"
+}
+
+
+###
+get {{url}}/profile
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6InRlc3QiLCJpYXQiOjE1NjQ0NzY0NTh9.3yBuskjwPN_zPMQINH5UhUJ_KsASBQgxw8QAS6sJAvQ
